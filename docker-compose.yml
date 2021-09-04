@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  vue3:  
+    image: vue_firebase_esencial    
+    container_name: vue_firebase_esencial  
+    build: .
+    ports:
+      - "9000:80"
+      - "9091:8080"
+    volumes:
+      - './vue3:/usr/local/apache2/htdocs/'
+    #restart: always

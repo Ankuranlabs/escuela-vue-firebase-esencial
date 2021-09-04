@@ -1,0 +1,23 @@
+vue3/vue3-firebase-esencial/.DS_Store
+vue3/vue3-firebase-esencial/node_modules
+vue3/vue3-firebase-esencial/dist
+
+
+# local env files
+vue3/vue3-firebase-esencial/.env.local
+vue3/vue3-firebase-esencial/.env.*.local
+
+# Log files
+vue3/vue3-firebase-esencial/npm-debug.log*
+vue3/vue3-firebase-esencial/yarn-debug.log*
+vue3/vue3-firebase-esencial/yarn-error.log*
+vue3/vue3-firebase-esencial/pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
