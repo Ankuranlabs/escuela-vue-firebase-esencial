@@ -1,18 +1,18 @@
 <template>
-  <article class="section">
-    <div class="container">
+  <article class="section h-screen">
+    <div class="w-1/3 m-auto mt-24">
       <div class="columns">
-        <div class="column is-half is-offset-one-quarter">
+        <!--div class="column is-half is-offset-one-quarter"-->
+        <div class="border border-gray-400 p-5 rounded">
           <!-- Login form -->
           <template v-if="action === 'login'">
-            <h1 class="title has-text-centered">Login</h1>
+            <h1 class="font-bold text-2xl text-gray-800 text-center m-3">Login</h1>
             <form @submit.prevent="doLogin">
               <div class="field">
-                <label class="label">Email</label>
+                <label class="block font-medium text-sm text-gray-700">Email</label>
                 <div class="control">
                   <input
-                    v-model="userData.email"
-                    class="input"
+                    v-model="userData.email"                    
                     type="email"
                     placeholder="e.g. alexsmith@gmail.com"
                     required
@@ -21,32 +21,32 @@
               </div>
 
               <div class="field">
-                <label class="label">Password</label>
+                <label class="block font-medium text-sm text-gray-700">Password</label>
                 <div class="control">
                   <input
-                    v-model="userData.password"
-                    class="input"
+                    v-model="userData.password"                    
                     type="password"
                     required
                   />
                 </div>
               </div>
 
-              <div class="field has-text-right">
-                <div class="control">
+              
+                <div class="my-3">
                   <button
                     type="submit"
-                    class="button is-link"
+                    class="btn btn-primary"
                     :class="{ 'is-loading': isLoading }"
                   >
                     Login
                   </button>
                 </div>
-              </div>
-              <a class="is-block" href="#" @click="action = 'register'"
+              <div class="flex justify-between">
+              <a class="underline text-sm text-indigo-800" href="#" @click="action = 'register'"
                 >Don't have an account?</a
               >
-              <a href="#" @click="action = 'reset'">Forgot your password?</a>
+              <a href="#" class="underline text-sm text-indigo-800" @click="action = 'reset'">Forgot your password?</a>
+              </div>
             </form>
           </template>
           <!-- End of login form -->
@@ -97,7 +97,7 @@
                 <div class="control">
                   <button
                     type="submit"
-                    class="button is-link"
+                    class="btn btn-primary"
                     :class="{ 'is-loading': isLoading }"
                   >
                     Register
@@ -130,7 +130,7 @@
                 <div class="control">
                   <button
                     type="submit"
-                    class="button is-link"
+                    class="btn btn-primary"
                     :class="{ 'is-loading': isLoading }"
                   >
                     Reset
