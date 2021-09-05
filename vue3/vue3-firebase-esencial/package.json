@@ -20,8 +20,8 @@
     "vue": "^3.0.0",
     "vue-cli-plugin-tailwind": "^2.0.6",
     "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0",
-    "vue-toast-notification": "^2.0.1"
+    "vue-toast-notification": "^2.0.1",
+    "vuex": "^4.0.0-0"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.9",
@@ -34,7 +34,7 @@
     "@vue/test-utils": "^2.0.0-0",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
-  }, 
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
