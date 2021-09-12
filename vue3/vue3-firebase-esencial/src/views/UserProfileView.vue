@@ -2,8 +2,8 @@
   <article class="section">
     <div class="container">
       <div class="columns">
-        <div class="column is-half is-offset-one-quarter">
-          <h1 class="title has-text-centered">Profile</h1>
+        <div class="border border-gray-400 p-5 rounded">
+          <h1 class="h1">Profile</h1>
           <!-- User Profile form -->
           <form v-if="user" @submit.prevent="updateProfile">
             <div class="field">
@@ -42,10 +42,10 @@
             </div>
 
             <div class="field has-text-right">
-              <div class="control">
+              <div class="my-3">
                 <button
                   type="submit"
-                  class="button is-link"
+                  class="btn btn-primary"
                   :disabled="!hasDataChanged"
                   :class="{ 'is-loading': isLoading }"
                 >

@@ -1,12 +1,12 @@
 <template>
-  <article class="section h-screen">
-    <div class="w-1/3 m-auto mt-24">
+  <article class="section">
+    <div class="container">
       <div class="columns">
         <!--div class="column is-half is-offset-one-quarter"-->
         <div class="border border-gray-400 p-5 rounded">
           <!-- Login form -->
           <template v-if="action === 'login'">
-            <h1 class="font-bold text-2xl text-gray-800 text-center m-3">Login</h1>
+            <h1 class="h1">Login</h1>
             <form @submit.prevent="doLogin">
               <div class="field">
                 <label class="block font-medium text-sm text-gray-700">Email</label>
@@ -53,7 +53,7 @@
 
           <!-- Register form -->
           <template v-if="action === 'register'">
-            <h1 class="title has-text-centered">Register</h1>
+            <h1 class="h1">Register</h1>
             <form @submit.prevent="doRegister">
               <div class="field">
                 <label class="label">Name</label>
@@ -111,7 +111,7 @@
 
           <!-- Password reset email -->
           <template v-if="action === 'reset'">
-            <h1 class="title has-text-centered">Reset</h1>
+            <h1 class="h1">Reset</h1>
             <form @submit.prevent="doReset">
               <div class="field">
                 <label class="label">Email</label>

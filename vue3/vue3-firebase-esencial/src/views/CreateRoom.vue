@@ -2,8 +2,8 @@
   <article class="section">
     <div class="container">
       <div class="columns">
-        <div class="column is-half is-offset-one-quarter">
-          <h1 class="title has-text-centered">Create Room</h1>
+        <div class="border border-gray-400 p-5 rounded">
+          <h1 class="h1">Create Room</h1>
 
           <form @submit.prevent="createRoom">
             <div class="field">
@@ -70,7 +70,7 @@
               <div class="control">
                 <button
                   type="submit"
-                  class="button is-link"
+                  class="btn btn-primary"
                   :class="{ 'is-loading': isLoading }"
                 >
                   Create
