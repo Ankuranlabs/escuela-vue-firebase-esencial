@@ -9,7 +9,7 @@ import VueToast from "vue-toast-notification";
 import 'vue-toast-notification/dist/theme-sugar.css';
 
 import {db} from "./firebase";
-console.log(db);
+//console.log(db);
 
 createApp(App).use(store).use(router).use(VueToast).mount('#app')
 //import VueToast from "vue-toast-notification";

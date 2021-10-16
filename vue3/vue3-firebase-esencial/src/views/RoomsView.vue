@@ -5,10 +5,10 @@
         Rooms
       </h1>
 
-      <RoomsComponent
+      <!--RoomsComponent
         :unread-messages="unreadMessages"
         :rooms="$store.getters['rooms/roomsByDate']"
-      />
+      /-->
     </div>
   </section>
 </template>
@@ -54,19 +54,19 @@ export default {
     //  .delete()
  
     // Read a document 
-    const document = await db
-      .collection("users")
-      .doc("juanwmedia")
-      .get();
-      console.log(document.data());
-      console.log(document.id); // Document ID
-      console.log(document.exists); // Document exists (or not)
+    //const document = await db
+    //  .collection("users")
+    //  .doc("juanwmedia")
+    //  .get();
+    //  console.log(document.data());
+    //  console.log(document.id); // Document ID
+    //  console.log(document.exists); // Document exists (or not)
 
     // Read all documents from a collections
-    const collection = await db
-      .collection("users")
-      .get();
-    collection.forEach(doc => console.log(doc.id, doc.data()));
+    //const collection = await db
+    //  .collection("users")
+    //  .get();
+    //collection.forEach(doc => console.log(doc.id, doc.data()));
 
     // Read a document from a subcollection
     //const subDocument = await db
@@ -76,11 +76,46 @@ export default {
     //  .doc("books")
     //  .get();
 
-    const subDocument = await db
-      .doc("users/juanwmedia/meta/books")
-      .get();
+    //const subDocument = await db
+    //  .doc("users/juanwmedia/meta/books")
+    //  .get();
 
-    console.log(subDocument.data());
+    //console.log(subDocument.data());
+
+    // Listen for changes
+    //db
+    //  .collection("users")
+    //  .doc("juanwmedia")
+    //  .onSnapshot((docSnapshot => console.log(docSnapshot.data())));
+  
+    // Listen for query changes
+    //db
+    //  .collection("users")
+    //  .where("name", "==", "Guizmo")
+    //  //.onSnapshot(querySnapshot => console.log(querySnapshot));
+    //  .onSnapshot(
+    //    querySnapshot => querySnapshot.forEach(
+    //      docSnapshot => console.log(docSnapshot.id)
+    //    )
+    //  );
+    
+    // Listen for query type changes
+    //const unsub = db.collection("users")
+    //  .where("name", "==", "Guizmo")
+    //  .onSnapshot(querySnapshot => {
+    //    querySnapshot.docChanges().forEach(change => {
+    //        if (change.type === "added") {
+    //            console.log("Added: ", change.doc.data());
+    //        }
+    //        if (change.type === "modified") {
+    //            console.log("Modified: ", change.doc.data());
+    //        }
+    //        if (change.type === "removed") {
+    //            console.log("Removed: ", change.doc.data());
+    //        }
+    //    });
+    //});
+    //unsub();
 
   },*/
 
